@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+	font-family: 'Karla', sans-serif;
+	background-color: hsl(204, 43%, 93%);
+	font-size: 15px;
+}
+main{
+	width: 85%;
+	height: 730px;
+	margin: auto;
+	margin-top: 5rem;
+	display: grid;
+	margin-bottom: 10px;
+	grid-template-rows: 1fr 1fr 1fr;	
+}
+.section1, .section2, .section3{
+	height: 1fr;
+	padding: 25px;
+}
+.section1{
+	background-color: white;
+	border-radius: 4px 4px 0 0 ;
+	line-height: 1.4;
+}
+.section1header{
+	color: hsl(179, 47%, 52%);
+	display: block;
+	font-weight: 700;
+}
+.section1-2ndheader{
+	color: hsl(71, 73%, 54%);
+	display: block;
+	font-weight: 700;
+	margin-top: 15px;
+}
+.section1text{
+	color: hsl(218, 22%, 67%);
+	margin-top: 15px;
+	line-height: 1.7;
+}
+.section2{
+	background-color: hsl(179, 62%, 43%);
+}
+.section3{
+	background-color: hsl(179, 47%, 52%);
+}
+.section2header{
+	color: white;
+	font-weight: 400;
+	display: block ;
+}
+.amount{
+	display: inline-block;
+	color: white;
+	margin-top: 20px;
+}
+p{
+	display: inline;
+	color: hsla(100, 100%, 100%, 0.7);
+}
+.section2text{
+	color: white;
+	margin-top: 20px;
+	display: block;
+}
+button{
+	font-family: 'Karla', sans-serif;
+	background-color: hsl(71, 73%, 54%); 
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	width:100%;
+	height: 45px;
+	color: white;
+	padding: 10px;
+	font-size: 15px;
+	margin: auto;
+	margin-top: 30px;
+	transform: scale(1);
+	transition: 0.5s;
+}
+button:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.section3{
+	border-radius: 0 0 4px 4px;
+}
+.section3header{
+	color: white;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+.section3text{
+	color: hsla(100, 100%, 100%, 0.8);
+	display: block;
+	margin-top: 5px;
+	font-weight: 400;
+}
+.attribution {
+	font-size: 13px; 
+	color: black;
+	text-align: center;
+}
+.attribution a { 
+     color: hsl(228, 45%, 44%);
+	text-decoration: none;
+}
+@media screen and (min-width:950px) {
+	main{
+		width: 50%;
+		height: 400px;
+		grid-template-rows:  1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 10px;
+	}
+	.section1{
+		width: 2fr;
+		grid-column: 1/3;
+	}
+	.section2{
+		border-radius: 0 0 0 4px;
+	}
+	.section3{
+		border-radius: 0 0 4px 0;
+	}
+	.attribution{
+		margin-top: 60px;
+	}
+}
